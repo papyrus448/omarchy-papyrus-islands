@@ -6,6 +6,8 @@ en îlots flottants — le tout en une seule commande.
 
 ![Aperçu](theme/preview.jpg)
 
+![Capture d'écran](theme/papyrus_theme.png)
+
 ## Installation en une ligne
 
 ```sh
