@@ -21,8 +21,9 @@ cd omarchy-papyrus-islands
 ```
 
 L'installateur sauvegarde chaque fichier qu'il remplace dans un
-`<fichier>.bak.<date>`, puis applique le thème, redémarre le shell et recharge
-Hyprland.
+`<fichier>.bak.<date>` (et un éventuel thème existant dans
+`~/.config/omarchy/themes-backup/`), puis applique le thème, redémarre le shell
+et recharge Hyprland.
 
 ## Ce que ça installe
 

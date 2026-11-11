@@ -70,7 +70,12 @@ backup() {
 
 say "Installation du thème « $THEME_NAME »…"
 mkdir -p "$THEMES_DIR"
-backup "$THEMES_DIR/$THEME_SLUG"
+if [[ -e $THEMES_DIR/$THEME_SLUG ]]; then
+  theme_backup_dir="$CONFIG_DIR/omarchy/themes-backup"
+  mkdir -p "$theme_backup_dir"
+  cp -a "$THEMES_DIR/$THEME_SLUG" "$theme_backup_dir/$THEME_SLUG.bak.$STAMP"
+  say "Sauvegarde du thème existant : $theme_backup_dir/$THEME_SLUG.bak.$STAMP"
+fi
 rm -rf "$THEMES_DIR/$THEME_SLUG"
 mkdir -p "$THEMES_DIR/$THEME_SLUG"
 cp -a "$SOURCE_DIR/theme/." "$THEMES_DIR/$THEME_SLUG/"
