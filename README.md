@@ -2,9 +2,9 @@
 
 Un thème complet pour [Omarchy](https://omarchy.org/) 
 
-![Aperçu](theme/preview.jpg)
-
 ![Capture d'écran](theme/papyrus_theme.png)
+
+![Aperçu](theme/preview.jpg)
 
 ## Installation en une ligne
 
@@ -30,7 +30,7 @@ et recharge Hyprland.
 | Élément | Emplacement | Détail |
 |---|---|---|
 | Couleurs | `~/.config/omarchy/themes/papyrus-islands/colors.toml` | Palette Catppuccin Mocha, accent bleu `#89b4fa` |
-| Fond d'écran | `…/papyrus-islands/backgrounds/` | Wallhaven `3qg92y` |
+| Fond d'écran | `…/papyrus-islands/backgrounds/` | Wallhaven `3qg92y` + 2 variantes (`wallpaper-2`, `wallpaper-3`) |
 | Arrondis | `…/papyrus-islands/hyprland.lua` + bloc géré dans `~/.config/hypr/looknfeel.lua` | Arrondi 8 px, fenêtres inactives atténuées (0,15) |
 | Console | `~/.config/fastfetch/config.jsonc` + `cli.png` | Le fastfetch complet (hardware, software, uptime) |
 | Barre | `~/.config/omarchy/shell.json` | Barre `lobo.islands`, îlots noirs translucides, horloge centrée |

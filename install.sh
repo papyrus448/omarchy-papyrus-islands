@@ -80,6 +80,14 @@ rm -rf "$THEMES_DIR/$THEME_SLUG"
 mkdir -p "$THEMES_DIR/$THEME_SLUG"
 cp -a "$SOURCE_DIR/theme/." "$THEMES_DIR/$THEME_SLUG/"
 
+# Fonds d'écran fournis : le fond d'origine + les deux variantes.
+if compgen -G "$SOURCE_DIR/theme/backgrounds/*" >/dev/null; then
+  mkdir -p "$THEMES_DIR/$THEME_SLUG/backgrounds"
+  cp -f "$SOURCE_DIR"/theme/backgrounds/* "$THEMES_DIR/$THEME_SLUG/backgrounds/"
+  wallpaper_count=$(find "$THEMES_DIR/$THEME_SLUG/backgrounds" -maxdepth 1 -type f | wc -l | tr -d ' ')
+  say "Fonds d'écran installés : $wallpaper_count"
+fi
+
 # ------------------------------------------------------------------ fastfetch
 
 say "Installation de la configuration fastfetch…"
@@ -182,7 +190,7 @@ cat <<EOF
 
 $(printf '\033[1;32m✓\033[0m') Papyrus Islands est installé.
 
-  Thème      : $THEME_NAME (couleurs + fond d'écran)
+  Thème      : $THEME_NAME (couleurs + 3 fonds d'écran)
   Fenêtres   : arrondi 8 px, inactives atténuées
   Console    : fastfetch (config + logo)
   Barre      : îlots noirs translucides, horloge centrée
