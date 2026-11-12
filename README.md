@@ -1,8 +1,6 @@
 # Papyrus Islands
 
-Un thème complet pour [Omarchy](https://omarchy.org/) : les couleurs Catppuccin
-Mocha, les fenêtres arrondies, le `fastfetch` de la console et la barre du haut
-en îlots flottants — le tout en une seule commande.
+Un thème complet pour [Omarchy](https://omarchy.org/) 
 
 ![Aperçu](theme/preview.jpg)
 
