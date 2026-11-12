@@ -15,7 +15,7 @@ Le fond d'origine est l'aperçu ci-dessus ; voici les deux variantes fournies
 
 ![Fond d'écran 3](theme/backgrounds/wallpaper-3.jpg)
 
-## Installation en une ligne
+## Installation 
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/papyrus448/omarchy-papyrus-islands/main/install.sh | bash
