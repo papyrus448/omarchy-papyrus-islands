@@ -6,6 +6,16 @@ Un thème complet pour [Omarchy](https://omarchy.org/)
 
 ![Aperçu](theme/preview.jpg)
 
+## Fonds d'écran
+
+Les trois fonds fournis avec le thème (à faire défiler avec `omarchy theme bg next`) :
+
+![Wallhaven 3qg92y](theme/backgrounds/wallhaven-3qg92y.jpg)
+
+![Fond d'écran 2](theme/backgrounds/wallpaper-2.jpg)
+
+![Fond d'écran 3](theme/backgrounds/wallpaper-3.jpg)
+
 ## Installation en une ligne
 
 ```sh
