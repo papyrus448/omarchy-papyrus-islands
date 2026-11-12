@@ -8,9 +8,8 @@ Un thème complet pour [Omarchy](https://omarchy.org/)
 
 ## Fonds d'écran
 
-Les trois fonds fournis avec le thème (à faire défiler avec `omarchy theme bg next`) :
-
-![Wallhaven 3qg92y](theme/backgrounds/wallhaven-3qg92y.jpg)
+Le fond d'origine est l'aperçu ci-dessus ; voici les deux variantes fournies
+(à faire défiler avec `omarchy theme bg next`) :
 
 ![Fond d'écran 2](theme/backgrounds/wallpaper-2.jpg)
 
