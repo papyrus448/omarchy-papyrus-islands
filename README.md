@@ -3,15 +3,19 @@
 Un thème [Omarchy](https://omarchy.org/) : palette Catppuccin Mocha (accent bleu
 `#89b4fa`).
 
+![Aperçu du thème dans la console](preview.png)
+
+*Aperçu original généré depuis `colors.toml` : aucune image tierce n'est utilisée.*
+
 ## Installation
 
 ```sh
 omarchy theme install https://github.com/papyrus448/omarchy-papyrus-islands
 ```
 
-Ce dépôt ne contient que la palette (`colors.toml`). Les images ne sont pas
-redistribuées : télécharge-les depuis les liens ci-dessous, puis applique celle
-que tu veux avec :
+Ce dépôt contient la palette (`colors.toml`) et l'aperçu ci-dessus. Les fonds
+d'écran ne sont pas redistribués : télécharge-les depuis les liens ci-dessous,
+puis applique celui que tu veux avec :
 
 ```sh
 omarchy theme bg set ~/Pictures/wallhaven-3qg92y.jpg
@@ -48,5 +52,6 @@ l'auteur sont dans un dépôt séparé :
 
 ## Licence
 
-`colors.toml` et les fichiers de configuration sont sous licence MIT (voir
-[`LICENSE`](LICENSE)). Aucune image n'est incluse ni couverte par cette licence.
+`colors.toml`, `preview.png` et les fichiers de configuration sont sous licence
+MIT (voir [`LICENSE`](LICENSE)). L'aperçu est généré à partir de la palette ;
+aucune image tierce n'est incluse dans ce dépôt.
