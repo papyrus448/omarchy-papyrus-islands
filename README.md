@@ -1,99 +1,47 @@
 # Papyrus Islands
 
-Un thème complet pour [Omarchy](https://omarchy.org/) 
+Un thème [Omarchy](https://omarchy.org/) : palette Catppuccin Mocha (accent bleu
+`#89b4fa`) et trois fonds d'écran.
 
-![Capture d'écran](theme/papyrus_theme.png)
+![Capture d'écran](papyrus_theme.png)
 
-![Aperçu](theme/preview.jpg)
+![Aperçu](preview.jpg)
 
 ## Fonds d'écran
 
-Le fond d'origine est l'aperçu ci-dessus ; voici les deux variantes fournies
-(à faire défiler avec `omarchy theme bg next`) :
+Le fond d'origine est l'aperçu ci-dessus ; les deux variantes se parcourent avec
+`omarchy theme bg next`.
 
-![Fond d'écran 2](theme/backgrounds/wallpaper-2.jpg)
+![Fond d'écran 2](backgrounds/wallpaper-2.jpg)
 
-![Fond d'écran 3](theme/backgrounds/wallpaper-3.jpg)
+![Fond d'écran 3](backgrounds/wallpaper-3.jpg)
 
-## Installation 
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/papyrus448/omarchy-papyrus-islands/main/install.sh | bash
-```
-
-Ou depuis un clone du dépôt :
+## Installation
 
 ```sh
-git clone https://github.com/papyrus448/omarchy-papyrus-islands.git
-cd omarchy-papyrus-islands
-./install.sh
+omarchy theme install https://github.com/papyrus448/omarchy-papyrus-islands
 ```
 
-L'installateur sauvegarde chaque fichier qu'il remplace dans un
-`<fichier>.bak.<date>` (et un éventuel thème existant dans
-`~/.config/omarchy/themes-backup/`), puis applique le thème, redémarre le shell
-et recharge Hyprland.
+Omarchy clone le dépôt dans `~/.config/omarchy/themes/papyrus-islands`, n'installe
+que les fichiers de thème (`colors.toml`, `backgrounds/`, `preview.jpg`) et
+applique le thème immédiatement.
 
-## Ce que ça installe
+- Fond suivant : `omarchy theme bg next`
+- Mise à jour : `omarchy theme update`
+- Retrait : `omarchy theme remove papyrus-islands`
 
-| Élément | Emplacement | Détail |
-|---|---|---|
-| Couleurs | `~/.config/omarchy/themes/papyrus-islands/colors.toml` | Palette Catppuccin Mocha, accent bleu `#89b4fa` |
-| Fond d'écran | `…/papyrus-islands/backgrounds/` | Wallhaven `3qg92y` + 2 variantes (`wallpaper-2`, `wallpaper-3`) |
-| Arrondis | `…/papyrus-islands/hyprland.lua` + bloc géré dans `~/.config/hypr/looknfeel.lua` | Arrondi 8 px, fenêtres inactives atténuées (0,15) |
-| Console | `~/.config/fastfetch/config.jsonc` + `cli.png` | Le fastfetch complet (hardware, software, uptime) |
-| Barre | `~/.config/omarchy/shell.json` | Barre `lobo.islands`, îlots noirs translucides, horloge centrée |
-| Plugin barre | `~/.config/omarchy/plugins/lobo.islands/` | [Islands](https://github.com/DanielLob-o/Islands) (MIT), installé depuis sa source |
+Le thème ne contient aucun script. L'arrondi des fenêtres, les couleurs de bordure
+et la barre sont gérés par Omarchy et par ta propre configuration, pas par ce
+dépôt.
 
-La disposition de la barre reprend le style de l'auteur avec les widgets
-intégrés d'Omarchy : menu, workspaces, horloge, fuseaux horaires, météo, mises à
-jour, clavier, tray, agents, Bluetooth, réseau, audio, moniteur et alimentation.
+## Fichiers de référence (non installés)
 
-## Prérequis
-
-- Omarchy 4.x (Quattro) avec Hyprland
-- `git` et `jq`
-- Une police Nerd Font pour fastfetch (Omarchy installe JetBrainsMono Nerd Font
-  par défaut)
-
-## Personnaliser
-
-**Couleurs** — modifie `~/.config/omarchy/themes/papyrus-islands/colors.toml`,
-puis réapplique :
-
-```sh
-omarchy theme set papyrus-islands
-```
-
-**Arrondis** — la valeur vit dans le bloc `papyrus-islands` à la fin de
-`~/.config/hypr/looknfeel.lua` et dans le `hyprland.lua` du thème. Change les
-deux puis :
-
-```sh
-hyprctl reload
-```
-
-**Îlots** — les réglages sont dans `bar.islands` de
-`~/.config/omarchy/shell.json` (`color`, `opacity`, `radius`, `borderOpacity`,
-`padding`). `radius: -1` suit l'arrondi des fenêtres.
-
-**Fastfetch** — remplace `~/.config/fastfetch/cli.png` par ton propre logo. Le
-type `auto` affiche l'image dans Kitty/Ghostty et retombe proprement ailleurs.
-
-## Désinstallation
-
-```sh
-curl -fsSL https://raw.githubusercontent.com/papyrus448/omarchy-papyrus-islands/main/uninstall.sh | bash
-```
-
-Le désinstalleur est aussi conservé dans
-`~/.local/share/omarchy-papyrus-islands/uninstall.sh`. Il restaure les
-sauvegardes les plus récentes de `shell.json`, `fastfetch` et `looknfeel.lua`,
-puis supprime le thème. Le plugin Islands reste installé, mais inutilisé :
-
-```sh
-omarchy plugin remove lobo.islands --yes
-```
+Les dossiers `fastfetch/` et `bar/` contiennent la configuration de console et la
+disposition d'îlots utilisées sur la machine de l'auteur. `omarchy theme install`
+ne les applique pas : ce sont des exemples à copier soi-même si on le souhaite.
+La barre `bar/layout.json` nécessite le plugin
+[Islands](https://github.com/DanielLob-o/Islands), qui s'installe séparément via
+`omarchy plugin add https://github.com/DanielLob-o/Islands.git --enable`.
 
 ## Crédits
 
@@ -105,6 +53,6 @@ omarchy plugin remove lobo.islands --yes
 
 ## Licence
 
-Le code et les fichiers de configuration de ce dépôt sont sous licence MIT
-(voir [`LICENSE`](LICENSE)). Le fond d'écran et le logo fastfetch appartiennent à
-leurs auteurs respectifs et ne sont pas couverts par cette licence.
+Les fichiers de configuration de ce dépôt sont sous licence MIT (voir
+[`LICENSE`](LICENSE)). Les images (fonds d'écran, aperçu, capture, logo) ne sont
+pas couvertes par cette licence.
