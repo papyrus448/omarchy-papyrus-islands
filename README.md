@@ -7,6 +7,10 @@ Un thème [Omarchy](https://omarchy.org/) : palette Catppuccin Mocha (accent ble
 
 *Aperçu original généré depuis `colors.toml` : aucune image tierce n'est utilisée.*
 
+![Capture de la session](screenshot.png)
+
+*Capture de la session (barre en îlots et console), fournie par l'auteur du thème.*
+
 ## Installation
 
 ```sh
@@ -47,6 +51,7 @@ Ces images ne sont **pas** incluses dans le dépôt : leurs droits appartiennent
 ## Crédits
 
 - Fonds `1` et `2` : fournis par l'auteur du thème, libres de droits.
+- Capture d'écran : fournie par l'auteur du thème.
 - Les trois fonds Wallhaven sont des créations de **Gracile**
   ([Pixiv, utilisateur 3434849](https://www.pixiv.net/en/users/3434849)),
   telles que référencées sur Wallhaven. Elles restent la propriété de leur
@@ -65,7 +70,8 @@ l'auteur sont dans un dépôt séparé :
 
 ## Licence
 
-`colors.toml`, `preview.png`, les fichiers de configuration et les deux fonds
-libres de droits (`backgrounds/1.webp`, `backgrounds/2.webp` et leurs originaux
-dans `assets/`) sont couverts par la licence MIT (voir [`LICENSE`](LICENSE)).
+`colors.toml`, `preview.png`, `screenshot.png`, les fichiers de configuration et
+les deux fonds libres de droits (`backgrounds/1.webp`, `backgrounds/2.webp` et
+leurs originaux dans `assets/`) sont couverts par la licence MIT (voir
+[`LICENSE`](LICENSE)).
 Les images Wallhaven ne sont pas incluses dans ce dépôt.
