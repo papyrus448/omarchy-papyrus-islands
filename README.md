@@ -9,9 +9,6 @@ Un thème [Omarchy](https://omarchy.org/) : palette Catppuccin Mocha (accent ble
 
 ## Fonds d'écran
 
-Le fond d'origine est l'aperçu ci-dessus ; les deux variantes se parcourent avec
-`omarchy theme bg next`.
-
 ![Fond d'écran 2](backgrounds/wallpaper-2.jpg)
 
 ![Fond d'écran 3](backgrounds/wallpaper-3.jpg)
@@ -29,10 +26,6 @@ applique le thème immédiatement.
 - Fond suivant : `omarchy theme bg next`
 - Mise à jour : `omarchy theme update`
 - Retrait : `omarchy theme remove papyrus-islands`
-
-Le thème ne contient aucun script. L'arrondi des fenêtres, les couleurs de bordure
-et la barre sont gérés par Omarchy et par ta propre configuration, pas par ce
-dépôt.
 
 ## Extras
 
