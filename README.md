@@ -34,22 +34,18 @@ Le thème ne contient aucun script. L'arrondi des fenêtres, les couleurs de bor
 et la barre sont gérés par Omarchy et par ta propre configuration, pas par ce
 dépôt.
 
-## Fichiers de référence (non installés)
+## Extras
 
-Les dossiers `fastfetch/` et `bar/` contiennent la configuration de console et la
-disposition d'îlots utilisées sur la machine de l'auteur. `omarchy theme install`
-ne les applique pas : ce sont des exemples à copier soi-même si on le souhaite.
-La barre `bar/layout.json` nécessite le plugin
-[Islands](https://github.com/DanielLob-o/Islands), qui s'installe séparément via
-`omarchy plugin add https://github.com/DanielLob-o/Islands.git --enable`.
+La configuration fastfetch, la barre en îlots et les arrondis de la machine de
+l'auteur ne font pas partie du thème : ils sont dans un dépôt séparé,
+[omarchy-papyrus-islands-extras](https://github.com/papyrus448/omarchy-papyrus-islands-extras).
+Son installateur est optionnel et ne s'applique qu'à la demande.
 
 ## Crédits
 
 - [Omarchy](https://omarchy.org/) et son shell, par David Heinemeier Hansson
 - [Catppuccin](https://catppuccin.com/) pour la palette Mocha
-- [Islands](https://github.com/DanielLob-o/Islands) par Daniel Lobo (MIT)
 - Fond d'écran : [Wallhaven 3qg92y](https://wallhaven.cc/w/3qg92y)
-- Logo fastfetch : fourni par l'auteur du thème
 
 ## Licence
 
