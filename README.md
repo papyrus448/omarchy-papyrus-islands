@@ -13,17 +13,30 @@ Un thème [Omarchy](https://omarchy.org/) : palette Catppuccin Mocha (accent ble
 omarchy theme install https://github.com/papyrus448/omarchy-papyrus-islands
 ```
 
-Ce dépôt contient la palette (`colors.toml`) et l'aperçu ci-dessus. Les fonds
-d'écran ne sont pas redistribués : télécharge-les depuis les liens ci-dessous,
-puis applique celui que tu veux avec :
+Le dépôt fournit la palette (`colors.toml`), cet aperçu et deux fonds d'écran
+libres de droits dans `backgrounds/`. Omarchy les installe automatiquement.
 
 ```sh
-omarchy theme bg set ~/Pictures/wallhaven-3qg92y.jpg
+omarchy theme bg next        # fond suivant
+omarchy theme bg set ~/Pictures/1.avif   # ou un fond précis
 ```
 
-## Fonds d'écran (liens uniquement)
+## Fonds d'écran inclus (libres de droits)
 
-Les fonds ne sont pas inclus dans le dépôt pour des raisons de droits d'auteur.
+Deux fonds fournis par l'auteur du thème, **libres de droits**. Les versions
+WebP sont celles qu'Omarchy utilise ; les originaux AVIF sont conservés dans
+`assets/`.
+
+![Fond d'écran 1](backgrounds/1.webp)
+
+[Original AVIF 1](assets/1.avif) · [Original AVIF 2](assets/2.avif)
+
+![Fond d'écran 2](backgrounds/2.webp)
+
+## Autres fonds (liens uniquement)
+
+Ces images ne sont **pas** incluses dans le dépôt : leurs droits appartiennent
+à leurs auteurs.
 
 | Fond | Lien |
 |---|---|
@@ -33,13 +46,13 @@ Les fonds ne sont pas inclus dans le dépôt pour des raisons de droits d'auteur
 
 ## Crédits
 
-Les trois images sont des créations de **Gracile**
-([Pixiv, utilisateur 3434849](https://www.pixiv.net/en/users/3434849)),
-telles que référencées sur Wallhaven. Elles restent la propriété de leur
-auteur ; le dépôt ne fait que renvoyer vers les pages d'origine.
-
-- `3qg92y` et `xewlkl` : uploadés sur Wallhaven par **Artix**
-- `e8ry7l` : uploadé sur Wallhaven par **jrmnt**
+- Fonds `1` et `2` : fournis par l'auteur du thème, libres de droits.
+- Les trois fonds Wallhaven sont des créations de **Gracile**
+  ([Pixiv, utilisateur 3434849](https://www.pixiv.net/en/users/3434849)),
+  telles que référencées sur Wallhaven. Elles restent la propriété de leur
+  auteur ; le dépôt ne fait que renvoyer vers les pages d'origine.
+  - `3qg92y` et `xewlkl` : uploadés sur Wallhaven par **Artix**
+  - `e8ry7l` : uploadé sur Wallhaven par **jrmnt**
 - [Wallhaven](https://wallhaven.cc/) : « All images remain property of their original owners. »
 - [Omarchy](https://omarchy.org/) et son shell, par David Heinemeier Hansson
 - [Catppuccin](https://catppuccin.com/) pour la palette Mocha
@@ -52,6 +65,7 @@ l'auteur sont dans un dépôt séparé :
 
 ## Licence
 
-`colors.toml`, `preview.png` et les fichiers de configuration sont sous licence
-MIT (voir [`LICENSE`](LICENSE)). L'aperçu est généré à partir de la palette ;
-aucune image tierce n'est incluse dans ce dépôt.
+`colors.toml`, `preview.png`, les fichiers de configuration et les deux fonds
+libres de droits (`backgrounds/1.webp`, `backgrounds/2.webp` et leurs originaux
+dans `assets/`) sont couverts par la licence MIT (voir [`LICENSE`](LICENSE)).
+Les images Wallhaven ne sont pas incluses dans ce dépôt.
